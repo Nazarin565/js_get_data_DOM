@@ -1,0 +1,2 @@
+for(var t=document.querySelectorAll(".population"),e=[],o=0;o<t.length;o++){if(isNaN(Number(t[o].textContent.split(",").join(""))))throw Error("Sorry, one or few value is not a number!");e.push(Number(t[o].textContent.split(",").join("")))}var n=e.reduce(function(t,e){return t+e},0),r=n/e.length;document.querySelector(".total-population").textContent=n.toLocaleString("en-US"),document.querySelector(".average-population").textContent=r.toLocaleString("en-US");
+//# sourceMappingURL=index.07fa42a4.js.map
